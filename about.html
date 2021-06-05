@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About</title>
+    <link href="./style-general.css" rel="stylesheet" />
+    <link href="./style-about.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+    </header>
+    <div class="page-wrapper">
+        <h1>
+            About
+        </h1>
+        <section class="page-text">
+            <div class="text-block">
+                <h2>
+                    Why am I interested in coding? 
+                </h2>
+                <p>
+                    I'm interested in coding because i find coding to be super useful in todays world, its an awesome tool that you can create websites, programs and other stuff with, I'm also a very analytical person and coding is the best way that an analytical person can create things with, also from what i learned untill this point in time its very fun to understand how code works, than using it and seeing the thing you wanted to create come to life.
+                </p>
+            </div>
+            <div class="text-block">
+                <h2>
+                    My educational experiences 
+                </h2>
+                <p>
+                    My educational experiences are learning in high school (physics and chemistry), learning some SQL and general intelligence in the army, some computer science and math in the Open University and Psychotherapy in Dhereh Method.
+                    the thing that is the most related to coding is the courses that i took in the university related to coding, i also learned a little bit of coding by myself and for this bootcamp (frontend masters).
+                </p>
+            </div>
+            <div class="text-block">
+                <h2>
+                    My career experiences 
+                </h2>
+                <p>
+                    My career experiences are my army experience (I consider it has a career experience), working has a Printing worker (Preferential job) after my army service, and Nursing care for an elder after i got back from a trip in south east asia.
+                </p>
+            </div>
+            <div class="text-block">
+                <h2>
+                    My personal interests
+                </h2>
+                <p>
+                    My personal interests are Coding, Psychotherapy, Philosophy, Personal development, Solving riddles, Spirituallity, Music, Guitar, Jiu Jitsu, Traveling and Entrepreneurship.
+                </p>
+            </div>
+            <div class="text-block">
+                <h2>
+                    Where was i born?
+                </h2>
+                <p>
+                    I was born in Tel Aviv.
+                </p>
+            </div>
+            <div class="text-block">
+                <h2>
+                    Cities i have lived in
+                </h2>
+                <p>
+                    I have lived in Tel Aviv, Ramat-Gan and Givataim.
+                </p>
+            </div>
+        </section>
+        <div class="space">
+            <div id="map"></div>
+            <script async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwTEUNYZbeVrHP7BRmCZIzyHfjMe-i8go&callback=initMap">
+            </script>
+            <div class="buttonscenter">
+                <button typeof="button" id="btn1" onclick="prev()" disabled>
+                    Previous
+                </button>
+                <button typeof="button" id="btn2" onclick="next()">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="code-lang" class="foottext">
+        </p>
+        <a href="index.html" class="footlink">Home</a>
+        <a href="about.html" class="footlink">About</a>
+        <a href="contact.html" class="footlink">Contact</a>
+    </footer>
+    <script src="footer.js"></script>
+    <script src="map.js"></script>
+</html>

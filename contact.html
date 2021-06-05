@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link href="./style-general.css" rel="stylesheet" />
+    <link href="./style-contact.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<body>
+    <header class="navbar">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="about.html" class="nav-item">About</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+    </header>
+    <div class="page-wrapper">
+        <h1>
+            Contact
+        </h1>  
+        <form id="form">
+            <fieldset>
+                <legend>Your contact information</legend>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" autofocus required
+                    onkeyup="manage(this)">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname"
+                    onkeyup="manage(this)">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required
+                    onkeyup="manage(this)">
+                <label for="comment">Comment</label>
+                <input type="text" id="comments" name="comments" required
+                    onkeyup="manage(this)">
+                <p class="pseudolabel">What is your programming experience?</p>
+					<label class="container">
+						<input type="radio" name="progexp" value="No experience at all" checked required> No experience at all
+                        <span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<input type="radio" name="progexp" value="0-3 month of experience"> 0-3 month of experience
+                        <span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<input type="radio" name="progexp" value="4-12 months of experience"> 4-12 months of experience
+                        <span class="checkmark"></span>
+					</label class="container">
+					<label class="container">
+						<input type="radio" name="progexp" value="1-2 years of experience"> 1-2 years of experience
+                        <span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<input type="radio" name="progexp" value="3+ years of experience"> 3+ years of experience
+                        <span class="checkmark"></span>
+					</label>
+                <button id="submit" value="submit" disabled> Submit
+                </button>
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <p id="code-lang" class="foottext">
+        </p>
+        <a href="index.html" class="footlink">Home</a>
+        <a href="about.html" class="footlink">About</a>
+        <a href="contact.html" class="footlink">Contact</a>
+    </footer>
+    <script src="footer.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
